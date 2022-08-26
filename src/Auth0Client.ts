@@ -283,7 +283,6 @@ export default class Auth0Client {
     this.tokenIssuer = getTokenIssuer(this.options.issuer, this.domainUrl);
 
     this.defaultScope = getUniqueScopes(
-      'openid',
       this.options?.advancedOptions?.defaultScope !== undefined
         ? this.options.advancedOptions.defaultScope
         : DEFAULT_SCOPE
